@@ -9,11 +9,25 @@
 
 Note: The files found only need to be added to the _filesLocated field. The pre-written code will display that for you at the end. The number of files located should be returned by the LocateFilesContainingContent call.
 
+## Solution Summary
 
-## Turning the Assignment In
-### Option A:
-- Clone the code in this repository, and create your own personal repository to host the results.
-- Once completed, email the link to your repository if it's public, or send an invite to collaborate on the repo if it's private
+- Implemented the `LocateFilesContainingSearchValue` method to:
+  - Search all files in the target directory (including those without extensions).
+  - Perform a case-insensitive search for the `_searchValue`.
+  - Add matching files to the `_filesLocated` list.
+  - Return the number of matches found.
 
-### Option B:
-- If you do not wish to create a personal repository, email the solution as a zip file (with the ".zip" extension removed from the filename).
+- Updated `Program.cs` to:
+  - Display matching file names.
+  - Show the total time taken to complete the search.
+  - Handle errors gracefully during execution.
+
+## Output
+
+- The application prints the following details to the console when executed:
+  - Start of the search
+  - Total number of files being scanned
+  - Names of all files containing the search string
+  - Number of matching files found
+  - Total execution time in milliseconds
+
